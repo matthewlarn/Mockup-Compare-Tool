@@ -1,0 +1,28 @@
+// manifest.json
+{
+  "manifest_version": 3,
+  "name": "Design Version Comparison Tool",
+  "version": "1.2",
+  "description": "Compare design mockups with live websites, with move, scale, opacity controls, and clipboard paste",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "clipboardRead"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}

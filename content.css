@@ -1,0 +1,11 @@
+
+#design-version-comparator-overlay {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  z-index: 2147483647;
+  transition: opacity 0.3s, transform 0.3s;
+  will-change: transform;
+  cursor: grab;
+}
